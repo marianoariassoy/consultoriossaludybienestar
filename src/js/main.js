@@ -3,7 +3,7 @@ import Alpine from "alpinejs";
 import intersect from "@alpinejs/intersect";
 import persist from "@alpinejs/persist";
 import collapse from "@alpinejs/collapse";
-import 'iconify-icon';
+import "iconify-icon";
 
 window.Alpine = Alpine;
 //Init collapse plugin
@@ -14,9 +14,9 @@ Alpine.plugin(intersect);
 Alpine.plugin(persist);
 //Init store
 Alpine.store("app", {
-  init() {
-    this.isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  },
+  // init() {
+  //   this.isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  // },
   isDark: Alpine.$persist(false),
   isLoggedIn: Alpine.$persist(false),
 });
