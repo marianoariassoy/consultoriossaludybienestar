@@ -1,6 +1,5 @@
 ---
 import Layout from "@layouts/Default.astro";
-import ButtonMain from "@components/base/ButtonMain.astro";
 import HeroMain from "@components/hero/HeroMain.astro";
 import SectionMuted from "@components/section/SectionMuted.astro";
 import Container from "@components/section/Container.astro";
@@ -9,9 +8,7 @@ import IconBlock from "@components/content/IconBlock.astro";
 import Toolbar from "@components/content/doctors/grid/Toolbar.astro";
 import Filters from "@components/content/doctors/grid/Filters.astro";
 import Grid from "@components/content/doctors/grid/Grid.astro";
-import SideStatsRight from "@components/content/features/SideStatsRight.astro";
-import SideStatsLeft from "@components/content/features/SideStatsLeft.astro";
-
+import Pricing from "@components/content/Pricing.astro";
 import Cta from "@components/content/Cta.astro";
 import Testimonials from "@components/content/Testimonials.astro";
 ---
@@ -36,12 +33,14 @@ import Testimonials from "@components/content/Testimonials.astro";
       />
 
       <div class="grid grid-cols-2 md:grid-cols-3 ltablet:grid-cols-4 lg:grid-cols-4 gap-x-6 gap-y-12" 
-      x-intersect="activeStep = 'spy-2'" >
+      x-intersect="activeStep = 'spy-1'">
         <!-- Item -->
         <div>
           <IconBlock
             title="Psicología"
-            text="Orientación TCC (Terapia Cognitivo Conductual), atención a adolescentes,  adultos, psicotécnicos."
+            text=`Tratamientos a niños adolescentes  jóvenes adultos y adultos mayores. Orientación Vocacional y Ocupacional. 
+            Apto Psicológico y Psicotecnicos. 
+            Pericias Judiciales.`
             icon="ph:heartbeat-duotone"
             class="'text-primary-600'"
           />
@@ -49,7 +48,10 @@ import Testimonials from "@components/content/Testimonials.astro";
         <div>
           <IconBlock
             title="Psiquiatría"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
+            text=`Atención a partir de 18 años.
+Experiencia en el tratamiento de pacientes con problemas de consumo. 
+Realización de evaluaciones diagnósticas (licencia de conducir, aptos para pilotos,etc.)
+Acompañamiento y seguimiento para cada paciente, adaptado a sus necesidades individuales.`
             icon="ph:brain-duotone"
             class="'text-primary-600'"
           />
@@ -57,16 +59,19 @@ import Testimonials from "@components/content/Testimonials.astro";
         <div>
           <IconBlock
             title="Psicopedagogía"
-            text="Atención a niños de 6 a 15 años. Experiencia en dificultades de aprendizaje."
+            text=`Prevención, diagnóstico y tratamiento psicopedagogico.
+Evaluación psicopedagogica niños y adultos.
+Estimulación cognitiva para adultos.`
             icon="ph:baby-duotone"
             class="'text-primary-600'"
           />
         </div>
+
         <div>
           <IconBlock
             title="Nutrición"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
-            icon="ph:person-duotone"
+            text=`Atención  para adolescentes, jóvenes y adultos. Incluye planes personalizados adaptados a diferentes necesidades, como dietas vegetarianas, control y manejo nutricional en pacientes con diabetes, y otros objetivos de salud.`
+            icon="ph:apple-logo-duotone"
             class="'text-primary-600'"
           />
         </div>
@@ -74,35 +79,21 @@ import Testimonials from "@components/content/Testimonials.astro";
         <div>
           <IconBlock
             title="Masoterapia"
-            text="Masajes descontracturantes y drenaje linfático manual."
+            text=`Drenaje linfático manual. Dolor de ciático. Mialgias. Contusiones. Hematomas. Miositis. Esguince.`
             icon="ph:hand-soap-duotone"
             class="'text-primary-600'"
-          />
-        </div>
-        <div>
-          <IconBlock
-            title="Talleres Niños"
-            text="Talleres para niños de 3 a 16 años"
-            icon="ph:person-duotone"
-             class="'text-primary-600'"
           />
         </div>
 
         <div>
           <IconBlock
-            title="Evaluación TEA y Neurocognitiva"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
-            icon="ph:calendar-duotone"
-            class="'text-primary-600'"
-          />
-        </div>
-        <!-- Item -->
-        <div>
-          <IconBlock
-            title="Terapia grupal de Adicciones"
-            text="Lunes de 17:30 a 19hs. 4 encuentros en el mes."
-            icon="ph:calendar-duotone"
-            class="'text-primary-600'"
+            title="RPG"
+            text=`La reeducación postural global, es un enfoque terapéutico de posturología.
+            Trabaja: Recuperación muscular. Paráslisis facial. Post operatorios. 
+            Lesiones deportivas. Dolor de cuello y hombro. Contracturas musculares. 
+            Problemas posturales. Ciertos tipos de dolores de cabeza.`
+            icon="ph:person-duotone"
+             class="'text-primary-600'"
           />
         </div>
       </div>
@@ -112,62 +103,43 @@ import Testimonials from "@components/content/Testimonials.astro";
   <SectionMuted class="'border-b border-muted-200 dark:border-muted-800'">
     <Container>
       <SectionTitle
-        title="Nuestros profesionales"
-        subtitle="Nuestro equipo de profesionales está comprometido con tu bienestar, combinando técnicas modernas con un enfoque humano y cercano."
-        minititle="Profesioanales"
+        title="Nuestro Equipo"
+        subtitle="Contamos con un equipo de profesionales comprometidos con tu bienestar, combinando técnicas modernas con un enfoque humano y cercano."
+        minititle="Equipo"
         class="'mx-auto text-center'"
-        id="profesionales"
+        id="equipo"
       />
 
-      <div  x-data="doctors()"  x-intersect="activeStep = 'spy-1'">
-        <Toolbar />
-
-        <!--Grid wrapper-->
+      <div x-data="doctors()"  x-intersect="activeStep = 'spy-2'">
         <div class="py-10">
-          <div class="grid grid-cols-12 md:gap-12 pb-20">
-            <!--Filters-->
-            <div class="hidden lg:block col-span-12 lg:col-span-3">
-              <Filters />
-            </div>
-            <!--Content-->
+          <div class="pb-20">
             <div class="col-span-12 lg:col-span-9">
-              <!--Subgrid-->
               <Grid />
             </div>
           </div>
-         
         </div>
       </div>
     </Container>
   </SectionMuted>
 
-  <!-- <SectionMuted>
-    <Container>
-      <SectionTitle
-        title="Pricing Options"
-        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
-        minititle="Simple Pricing"
-        class="'mx-auto text-center'"
-      />
-      <Pricing />
-    </Container>
-  </SectionMuted> -->
-
-
-
   <SectionMuted >
     <Container>
       <SectionTitle
-        title="Nuestro espacio"
-        subtitle=`Padre Perna 1591 (planta baja), 
-        Padre Perna 1592 (planta alta) 
+        title="Ubicación"
+        subtitle=`Padre Perna 1591 y 1592, 
         Garin, Prov. Buenos Aires, Argentina`
-        minititle="Ubicación"
+        minititle="Nuestro espacio"
         class="'mx-auto text-center'"
-        id="ubicacion"
+        id="espacio"
         
       />
       <div x-intersect="activeStep = 'spy-3'">
+
+        <p class="text-center mb-12">
+          Galeria de fotos 
+      
+        </p>  
+
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.464945462224!2d-58.73568282429793!3d-34.41494327302251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca1de8b17c2e7%3A0xab18bc0a04f7f651!2sPadre%20Perna%201591%2C%20B1619HLW%20Garin%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1734039365524!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </Container>
@@ -175,10 +147,19 @@ import Testimonials from "@components/content/Testimonials.astro";
 
   <SectionMuted>
     <Container>
-      <Cta />
+      <div id="talleres" x-intersect="activeStep = 'spy-4'">
+        <Pricing />
+      </div>
     </Container>
   </SectionMuted>
 
+  <!-- <SectionMuted>
+    <Container>
+      <div id="talleres" x-intersect="activeStep = 'spy-4'">
+        <Cta />
+      </div>
+    </Container>
+  </SectionMuted> -->
 
   <SectionMuted>
     <Container>
@@ -189,15 +170,12 @@ import Testimonials from "@components/content/Testimonials.astro";
         class="'mx-auto text-center'"
         id="testimonios"
       />
-      <div x-intersect="activeStep = 'spy-4'">
+      <div x-intersect="activeStep = 'spy-5'">
         <Testimonials />
       </div>
      
     </Container>
   </SectionMuted>
-
-
-
 
   <SectionMuted>
     <Container>
@@ -208,10 +186,8 @@ import Testimonials from "@components/content/Testimonials.astro";
         class="'mx-auto text-center'"
         id="contacto"
       />
-      <div x-intersect="activeStep = 'spy-5'" >
-       
+      <div x-intersect="activeStep = 'spy-6'" >
       </div>
-     
     </Container>
   </SectionMuted>
 

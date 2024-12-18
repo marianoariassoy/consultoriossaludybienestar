@@ -2,7 +2,7 @@
 import Card from "@components/base/Card.astro";
 ---
 
-<div class="grid md:grid-cols-3 ltablet:grid-cols-3 lg:grid-cols-3 gap-x-6 ptablet:gap-x-4 gap-y-16 pt-10">
+<div class="grid md:grid-cols-3 ltablet:grid-cols-4 lg:grid-cols-4 gap-x-6 ptablet:gap-x-4 gap-y-16 pt-10">
   <div x-show="activeCategory === 'all' || activeCategory === 'psicologia'">
     <Card class="'p-4'">
       <div
@@ -16,9 +16,11 @@ import Card from "@components/base/Card.astro";
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Rocío Fernández
+          Rocío E. Fernández
         </h4>
+        <p class="text-sm text-muted-400">Directora</p>
         <p class="text-sm text-muted-400">Lic. en Psicología</p>
+    
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">

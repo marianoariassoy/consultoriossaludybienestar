@@ -40,32 +40,37 @@ import Hamburger from "@components/base/Hamburger.astro";
     >
       <div class="flex flex-col lg:flex-row items-center gap-x-6 lg:gap-x-10">
 
-
         <div class="relative py-3 lg:py-5 after:content-[''] after:absolute after:-bottom-1.5 after:left-0 after:h-[3px] after:rounded-t-full after:transition-all after:duration-300 transition-colors duration-300"
-        :class="activeStep === 'spy-2' ? 'text-primary-500 after:bg-primary-500 after:w-full' : 'text-slate-500 dark:text-slate-400 hover:text-muted-700 dark:hover:text-muted-100 after:w-0'"
+        :class="activeStep === 'spy-1' ? 'text-primary-500 after:bg-primary-500 after:w-full' : 'text-slate-500 dark:text-slate-400 hover:text-muted-700 dark:hover:text-muted-100 after:w-0'"
       >
         <a href="#servicios">Servicios</a>
       </div>
   
         <div class="relative py-3 lg:py-5 after:content-[''] after:absolute after:-bottom-1.5 after:left-0 after:h-[3px] after:rounded-t-full after:transition-all after:duration-300 transition-colors duration-300"
-          :class="activeStep === 'spy-1' ? 'text-primary-500 after:bg-primary-500 after:w-full' : 'text-slate-500 dark:text-slate-400 hover:text-muted-700 dark:hover:text-muted-100 after:w-0'"
+          :class="activeStep === 'spy-2' ? 'text-primary-500 after:bg-primary-500 after:w-full' : 'text-slate-500 dark:text-slate-400 hover:text-muted-700 dark:hover:text-muted-100 after:w-0'"
         >
-          <a href="#profesionales">Profesionales</a>
+          <a href="#equipo">Equipo</a>
         </div>
 
         <div class="relative py-3 lg:py-5 after:content-[''] after:absolute after:-bottom-1.5 after:left-0 after:h-[3px] after:rounded-t-full after:transition-all after:duration-300 transition-colors duration-300"
         :class="activeStep === 'spy-3' ? 'text-primary-500 after:bg-primary-500 after:w-full' : 'text-slate-500 dark:text-slate-400 hover:text-muted-700 dark:hover:text-muted-100 after:w-0'"
       >
-        <a href="#ubicacion">Ubicación</a>
+        <a href="#espacio">Nuestro espacio</a>
       </div>
 
         <div class="relative py-3 lg:py-5 after:content-[''] after:absolute after:-bottom-1.5 after:left-0 after:h-[3px] after:rounded-t-full after:transition-all after:duration-300 transition-colors duration-300"
-        :class="activeStep === 'spy-4' ? 'text-primary-500 after:bg-primary-500 after:w-full' : 'text-slate-500 dark:text-slate-400 hover:text-muted-700 dark:hover:text-muted-100 after:w-0'"> 
+        :class="activeStep === 'spy-4' ? 'text-primary-500 after:bg-primary-500 after:w-full' : 'text-slate-500 dark:text-slate-400 hover:text-muted-700 dark:hover:text-muted-100 after:w-0'"
+      >
+        <a href="#talleres">Talleres</a>
+      </div>
+
+        <div class="relative py-3 lg:py-5 after:content-[''] after:absolute after:-bottom-1.5 after:left-0 after:h-[3px] after:rounded-t-full after:transition-all after:duration-300 transition-colors duration-300"
+        :class="activeStep === 'spy-5' ? 'text-primary-500 after:bg-primary-500 after:w-full' : 'text-slate-500 dark:text-slate-400 hover:text-muted-700 dark:hover:text-muted-100 after:w-0'"> 
           <a href="#testimonios">Testimonios</a>
         </div>
   
         <div class="relative py-3 lg:py-5 after:content-[''] after:absolute after:-bottom-1.5 after:left-0 after:h-[3px] after:rounded-t-full after:transition-all after:duration-300 transition-colors duration-300"
-        :class="activeStep === 'spy-5' ? 'text-primary-500 after:bg-primary-500 after:w-full' : 'text-slate-500 dark:text-slate-400 hover:text-muted-700 dark:hover:text-muted-100 after:w-0'"> 
+        :class="activeStep === 'spy-6' ? 'text-primary-500 after:bg-primary-500 after:w-full' : 'text-slate-500 dark:text-slate-400 hover:text-muted-700 dark:hover:text-muted-100 after:w-0'"> 
           <a href="#contacto">Contacto</a>
         </div>
         <div class="py-3 lg:py-5">
@@ -75,7 +80,6 @@ import Hamburger from "@components/base/Hamburger.astro";
       <div class="w-full md:w-auto">
         <span
       >
-      
   
         <a href="https://www.instagram.com/consultorios_salud_y_bienestar/" target="_blank" class="text-muted-500">
           <iconify-icon class="iconify w-5 h-5 flex items-center justify-center text-xl" icon="fa6-brands:instagram"></iconify-icon>
