@@ -2,7 +2,7 @@
 import Card from "@components/base/Card.astro";
 ---
 
-<div class="grid md:grid-cols-3 ltablet:grid-cols-4 lg:grid-cols-4 gap-x-6 ptablet:gap-x-4 gap-y-16 pt-10">
+<div class="grid md:grid-cols-3 ltablet:grid-cols-4 lg:grid-cols-4 gap-x-6 ptablet:gap-x-4 gap-y-20 pt-10">
   <div x-show="activeCategory === 'all' || activeCategory === 'psicologia'">
     <Card class="'p-4'">
       <div
@@ -18,7 +18,7 @@ import Card from "@components/base/Card.astro";
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
           Rocío E. Fernández
         </h4>
-        <p class="text-sm text-muted-400">Directora</p>
+     
         <p class="text-sm text-muted-400">Lic. en Psicología</p>
     
       </div>
@@ -29,17 +29,19 @@ import Card from "@components/base/Card.astro";
       </div>
     </Card>
   </div>
-  <!-- Doctor -->
+
   <div x-show="activeCategory === 'all' || activeCategory === 'masoterapia'">
     <Card class="'p-4'">
       <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
+        class="relative w-full h-40 "
       >
-      <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-6.svg"
-          alt="Doctor"
-        />
+        <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[240px] ptablet:max-w-[220px] shadow-xl">
+            <img
+            class="w-full h-full object-contain"
+            src="/img/team/rosana-arce.jpg"
+            alt="Rosana Arce"
+          />
+        </div>
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
@@ -55,18 +57,20 @@ import Card from "@components/base/Card.astro";
 
     </Card>
   </div>
-  <!-- Doctor -->
+
   <div x-show="activeCategory === 'all' || activeCategory === 'psicopedagogia'">
     <Card class="'p-4'">
       <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
-      >
-      <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-4.svg"
-          alt="Doctor"
+      class="relative w-full h-40 "
+    >
+      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[240px] ptablet:max-w-[220px] shadow-xl">
+          <img
+          class="w-full h-full object-contain"
+          src="/img/team/florencia-lucero.jpg"
+          alt="Florencia Lucero"
         />
       </div>
+    </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
           Florencia Lucero 
@@ -81,7 +85,7 @@ import Card from "@components/base/Card.astro";
 
     </Card>
   </div>
-  <!-- Doctor -->
+  
   <div x-show="activeCategory === 'all' || activeCategory === 'psicologia'">
     <Card class="'p-4'">
       <div
@@ -108,18 +112,19 @@ import Card from "@components/base/Card.astro";
     </Card>
   </div>
 
-  <!-- Doctor -->
   <div x-show="activeCategory === 'all' || activeCategory === 'nutricion'">
     <Card class="'p-4'">
       <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
-      >
-      <img
-      class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-      src="/img/illustrations/doctors/doctor-9.svg"
-      alt="Doctor"
-    />
+      class="relative w-full h-40"
+    >
+      <div class="rounded-full aspect-square overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[240px] ptablet:max-w-[220px] shadow-xl">
+          <img
+          class="w-full h-full object-contain "
+          src="/img/team/maria-barrios.jpg"
+          alt="Maria Laura Barrios"
+        /> 
       </div>
+    </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
           María Laura Barrios
@@ -134,18 +139,20 @@ import Card from "@components/base/Card.astro";
     
     </Card>
   </div>
-  <!-- Doctor -->
+
   <div x-show="activeCategory === 'all' || activeCategory === 'psicologia'">
     <Card class="'p-4'">
       <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
-      >
-        <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-6.svg"
-          alt="Doctor"
+      class="relative w-full h-40 "
+    >
+      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[240px] ptablet:max-w-[220px] shadow-xl">
+          <img
+          class="w-full h-full object-contain"
+          src="/img/team/maribel-krispien.jpg"
+          alt="Maribel Krispien"
         />
       </div>
+    </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
           Maribel Krispien 
@@ -160,18 +167,20 @@ import Card from "@components/base/Card.astro";
     
     </Card>
   </div>
-  <!-- Doctor -->
+
   <div x-show="activeCategory === 'all' || activeCategory === 'psiquiatria'">
     <Card class="'p-4'">
       <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
-      >
-        <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-7.svg"
-          alt="Doctor"
+      class="relative w-full h-40 "
+    >
+      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[240px] ptablet:max-w-[220px] shadow-xl">
+          <img
+          class="w-full h-full object-contain"
+          src="/img/team/alfredo-herman.jpg"
+          alt="Alfredo Herman"
         />
       </div>
+    </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
           Dr. Alfredo R. Herman
@@ -186,7 +195,7 @@ import Card from "@components/base/Card.astro";
    
     </Card>
   </div>
-  <!-- Doctor -->
+ 
   <div x-show="activeCategory === 'all' || activeCategory === 'cardiology'">
     <Card class="'p-4'">
       <div
@@ -212,17 +221,20 @@ import Card from "@components/base/Card.astro";
     
     </Card>
   </div>
-  <!-- Doctor -->
+
   <div x-show="activeCategory === 'all' || activeCategory === 'general'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
+      <Card class="'p-4'">
+        <div
+        class="relative w-full h-40 "
       >
-        <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-9.svg"
-          alt="Doctor"
-        />
+        <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[240px] ptablet:max-w-[220px] shadow-xl">
+            <img
+            class="w-full h-full object-contain"
+            src="/img/team/viviana-villodas.jpg"
+            alt="Viviana Villodas"
+          />
+        </div>
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
@@ -238,7 +250,7 @@ import Card from "@components/base/Card.astro";
    
     </Card>
   </div>
-  <!-- Doctor -->
+
   <div x-show="activeCategory === 'all' || activeCategory === 'psicopadagogia' | activeCategory === 'talleres'">
     <Card class="'p-4'">
       <div
@@ -264,18 +276,20 @@ import Card from "@components/base/Card.astro";
  
     </Card>
   </div>
-  <!-- Doctor -->
+
   <div x-show="activeCategory === 'all' || activeCategory === 'psicopedagogia'">
     <Card class="'p-4'">
       <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
-      >
-      <img
-      class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-      src="/img/illustrations/doctors/doctor-1.svg"
-      alt="Doctor"
-    />
+      class="relative w-full h-40 "
+    >
+      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[240px] ptablet:max-w-[220px] shadow-xl">
+          <img
+          class="w-full h-full object-contain"
+          src="/img/team/lorena-solis.jpg"
+          alt="Lorena Solis"
+        />
       </div>
+    </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
           Lorena Solis
@@ -290,7 +304,7 @@ import Card from "@components/base/Card.astro";
 
     </Card>
   </div>
-  <!-- Doctor -->
+
   <div x-show="activeCategory === 'all' || activeCategory === 'psicologia'">
     <Card class="'p-4'">
       <div
@@ -317,7 +331,7 @@ import Card from "@components/base/Card.astro";
     </Card>
   </div>
 
-  <!-- Doctor -->
+
   <div x-show="activeCategory === 'all' || activeCategory === 'psicologia'">
     <Card class="'p-4'">
       <div
@@ -344,18 +358,19 @@ import Card from "@components/base/Card.astro";
     </Card>
   </div>
 
-  <!-- Doctor -->
   <div x-show="activeCategory === 'all' || activeCategory === 'psicologia'">
     <Card class="'p-4'">
       <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
-      >
-      <img
-      class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-      src="/img/illustrations/doctors/doctor-6.svg"
-      alt="Doctor"
-    />
+      class="relative w-full h-40 "
+    >
+      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[240px] ptablet:max-w-[220px] shadow-xl">
+          <img
+          class="w-full h-full object-contain"
+          src="/img/team/camila-quiroga.jpg"
+          alt="Camila Quiroga"
+        />
       </div>
+    </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
           Camila Gomez Quiroga
