@@ -6,11 +6,12 @@ import Container from "@components/section/Container.astro";
 import SectionTitle from "@components/section/SectionTitle.astro";
 import IconBlock from "@components/content/IconBlock.astro";
 import Toolbar from "@components/content/doctors/grid/Toolbar.astro";
-import Filters from "@components/content/doctors/grid/Filters.astro";
+
 import Grid from "@components/content/doctors/grid/Grid.astro";
 import Pricing from "@components/content/Pricing.astro";
-import Cta from "@components/content/Cta.astro";
+// import Cta from "@components/content/Cta.astro";
 import Testimonials from "@components/content/Testimonials.astro";
+import About from "@components/content/About.astro";
 ---
 
 <Layout title="Home">
@@ -128,48 +129,7 @@ Estimulación cognitiva para adultos.`
     </Container>
   </SectionMuted>
 
-  <SectionMuted >
-    <Container>
-      <SectionTitle
-        title="Nuestro espacio"
-        subtitle=``
-        minititle="Nosotros"
-        class="'mx-auto text-center'"
-        id="espacio"
-        
-      />
-      <div x-intersect="activeStep = 'spy-4'">
-        <p class="text-muted-500 dark:text-muted-400 mb-12 text-lg text-center">
-          Nuestro consultorio de Salud y Bienestar nació del sueño de crear un espacio donde las personas pudieran encontrar <strong> apoyo integral para su bienestar emocional</strong>, mental y físico. La <strong> Lic. Rocío E. Fernández</strong>, psicóloga apasionada por acompañar a las personas en su camino hacia una vida plena, inició este proyecto tras años de experiencia en hospitales, clínicas y centros especializados. Estas vivencias le brindaron una visión amplia sobre la importancia de abordar la salud de manera interdisciplinaria.
-          <br><br>
-A principios de 2021, el consultorio comenzó a sumar los primeros profesionales de otras áreas. Esta nueva etapa marcó el inicio de un <strong></strong>enfoque interdisciplinario</strong> que ampliaba las posibilidades de acompañamiento. En diciembre de 2022, el proyecto evolucionó nuevamente, pasando de ser Consultorios Salud Mental a convertirse en Consultorios Salud y Bienestar, un espacio más amplio y diversificado.
-<br><br>
-Hoy, nuestro equipo incluye psicólogos, psicopedagogas, un médico psiquiatra, una nutricionista y una masajista especializada en RPG, todos trabajando juntos para ofrecer una atención personalizada y de calidad.
-<br><br>
-Este es un lugar pensado para quienes buscan un acompañamiento completo, donde la empatía y el profesionalismo van de la mano. Nuestro compromiso es cuidar de cada aspecto de tu bienestar, brindando un espacio cálido y accesible para todas las personas.
-        </p>
-
-        <p class="text-center mb-12">
-          Galeria de fotos 
-      
-        </p>  
-
-      </div>
-      <SectionTitle
-      title="Ubicación"
-      subtitle=`Padre Perna 1591 y 1592, 
-      Garin, Prov. Buenos Aires, Argentina`
-      minititle=""
-      class="'mx-auto text-center'"
-      id="ubicacion"
-      
-    />
-    <div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.464945462224!2d-58.73568282429793!3d-34.41494327302251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca1de8b17c2e7%3A0xab18bc0a04f7f651!2sPadre%20Perna%201591%2C%20B1619HLW%20Garin%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1734039365524!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    </Container>
-  </SectionMuted>
-
+  <About />
 
   <!-- <SectionMuted>
     <Container>
