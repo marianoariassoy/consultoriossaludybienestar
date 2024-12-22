@@ -103,21 +103,19 @@ Estimulación cognitiva para adultos.`
   <SectionMuted class="'border-b border-muted-200 dark:border-muted-800'">
     <Container>
       <SectionTitle
-        title="Nuestro Equipo"
+        title="Nuestros Profesionales"
         subtitle="Contamos con un equipo de profesionales comprometidos con tu bienestar, combinando técnicas modernas con un enfoque humano y cercano."
-        minititle="Equipo"
+        minititle="Profesionales"
         class="'mx-auto text-center'"
-        id="equipo"
+        id="profesionales"
       />
 
       <div x-data="doctors()"  x-intersect="activeStep = 'spy-2'">
-        <div class="py-10">
-          <div class="pb-20">
-            <div class="col-span-12 lg:col-span-9">
+        <Toolbar />
+            <div class="mt-16">
+              <!--Subgrid-->
               <Grid />
             </div>
-          </div>
-        </div>
       </div>
     </Container>
   </SectionMuted>
@@ -134,15 +132,22 @@ Estimulación cognitiva para adultos.`
     <Container>
       <SectionTitle
         title="Nuestro espacio"
-        subtitle=`Nuestro consultorio nació del sueño de crear un espacio donde las personas pudieran encontrar apoyo emocional y orientación en los momentos más desafiantes de sus vidas. Todo comenzó con la Lic. Rocío E. Fernandéz, una psicóloga apasionadoa por entender la mente humana y ayudar a los demás a descubrir su verdadero potencial.
-
-Inspirada por la falta de lugares accesibles y cálidos donde las personas pudieran sentirse escuchadas sin juicios, Rocío decidió abrir las puertas de este consultorio, combinando experiencia profesional con un enfoque humano y empático.`
+        subtitle=``
         minititle="Nosotros"
         class="'mx-auto text-center'"
         id="espacio"
         
       />
       <div x-intersect="activeStep = 'spy-4'">
+        <p class="text-muted-500 dark:text-muted-400 mb-12 text-lg text-center">
+          Nuestro consultorio de Salud y Bienestar nació del sueño de crear un espacio donde las personas pudieran encontrar <strong> apoyo integral para su bienestar emocional</strong>, mental y físico. La <strong> Lic. Rocío E. Fernández</strong>, psicóloga apasionada por acompañar a las personas en su camino hacia una vida plena, inició este proyecto tras años de experiencia en hospitales, clínicas y centros especializados. Estas vivencias le brindaron una visión amplia sobre la importancia de abordar la salud de manera interdisciplinaria.
+          <br><br>
+A principios de 2021, el consultorio comenzó a sumar los primeros profesionales de otras áreas. Esta nueva etapa marcó el inicio de un <strong></strong>enfoque interdisciplinario</strong> que ampliaba las posibilidades de acompañamiento. En diciembre de 2022, el proyecto evolucionó nuevamente, pasando de ser Consultorios Salud Mental a convertirse en Consultorios Salud y Bienestar, un espacio más amplio y diversificado.
+<br><br>
+Hoy, nuestro equipo incluye psicólogos, psicopedagogas, un médico psiquiatra, una nutricionista y una masajista especializada en RPG, todos trabajando juntos para ofrecer una atención personalizada y de calidad.
+<br><br>
+Este es un lugar pensado para quienes buscan un acompañamiento completo, donde la empatía y el profesionalismo van de la mano. Nuestro compromiso es cuidar de cada aspecto de tu bienestar, brindando un espacio cálido y accesible para todas las personas.
+        </p>
 
         <p class="text-center mb-12">
           Galeria de fotos 
