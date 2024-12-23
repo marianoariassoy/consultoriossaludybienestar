@@ -12,6 +12,7 @@ import Pricing from "@components/content/Pricing.astro";
 // import Cta from "@components/content/Cta.astro";
 import Testimonials from "@components/content/Testimonials.astro";
 import About from "@components/content/About.astro";
+import ButtonMain from "@components/base/ButtonMain.astro";
 ---
 
 <Layout title="Home">
@@ -143,7 +144,7 @@ Estimulación cognitiva para adultos.`
     <Container>
       <SectionTitle
         title="Algunos Testimonios"
-        subtitle="Descubrí las experiencias reales de quienes han confiado en nosotros. Compartimos sus historias, opiniones y resultados, reflejando el impacto positivo que hemos tenido en sus vidas. Tu bienestar también puede ser nuestra próxima historia de éxito."
+        subtitle="Descubrí las experiencias reales de quienes han confiado en nosotros, con una puntuación de 4.7 de 60 opiniones en Google, compartimos sus historias, opiniones y resultados, reflejando el impacto positivo que hemos tenido en sus vidas. Tu bienestar también puede ser nuestra próxima historia de éxito. "
         minititle="Nuestros Pacientes"
         class="'mx-auto text-center'"
         id="testimonios"
@@ -164,15 +165,16 @@ Estimulación cognitiva para adultos.`
         class="'mx-auto text-center'"
         id="contacto"
       />
-      <div x-intersect="activeStep = 'spy-6'" >
+      <div x-intersect="activeStep = 'spy-6'" class="flex justify-center items-center">
+        <ButtonMain
+          title="Contacto"
+          class="'cursor-pointer'"
+          to="https://wa.me/5491141762191"
+        >
+        Contactanos</ButtonMain>
       </div>
 
-     
     </Container>
   </SectionMuted>
-
-
-
-
 
 </Layout>

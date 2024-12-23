@@ -2,7 +2,7 @@
 import Card from "@components/base/Card.astro";
 ---
 
-<div class="grid md:grid-cols-3 ltablet:grid-cols-4 lg:grid-cols-4 gap-x-6 ptablet:gap-x-4 gap-y-20 pt-10">
+<div class="grid grid-cols-2 md:grid-cols-3 ltablet:grid-cols-4 lg:grid-cols-4 gap-x-3 lg:gap-x-6 ptablet:gap-x-4 gap-y-3 lg:gap-y-20 pt-10">
   <div x-show="activeCategory === 'all' || activeCategory === 'psicologia'">
     <Card class="'p-4'">
       <div
@@ -230,7 +230,6 @@ import Card from "@components/base/Card.astro";
 
   <div x-show="activeCategory === 'all' || activeCategory === 'general'">
     <Card class="'p-4'">
-      <Card class="'p-4'">
         <div
         class="relative w-full h-40 "
       >
