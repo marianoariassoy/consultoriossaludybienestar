@@ -2,13 +2,41 @@
 import Card from "@components/base/Card.astro";
 ---
 
-<div class="grid grid-cols-2 md:grid-cols-3 ltablet:grid-cols-4 lg:grid-cols-4 gap-x-3 lg:gap-x-6 ptablet:gap-x-4 gap-y-3 lg:gap-y-20 lg:pt-10">
-  <div x-show="activeCategory === 'all' || activeCategory === 'psicologia'">
-    <Card class="'p-4'">
+<div class="grid grid-cols-1 md:grid-cols-3 ltablet:grid-cols-4 lg:grid-cols-4 gap-x-3 lg:gap-x-6 ptablet:gap-x-4 gap-y-12 lg:gap-y-20 lg:pt-10">
+
+  <div x-show="activeCategory === 'all' || activeCategory === 'psiquiatria'">
+    <Card class="'p-4 text-center lg:text-left'">
       <div
-      class="relative w-full h-40 "
+      class="relative w-full h-40"
     >
-      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[240px] ptablet:max-w-[220px] shadow-xl">
+      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[190px] lg:max-w-[240px] ptablet:max-w-[220px] shadow-xl">
+          <img
+          class="w-full h-full object-contain"
+          src="/img/team/alfredo-herman.jpg"
+          alt="Alfredo Herman"
+        />
+      </div>
+    </div>
+      <div class="font-sans mt-3">
+        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
+          Dr. Alfredo R. Herman
+        </h4>
+        <p class="text-sm text-muted-400">Medico Psiquiatra</p>
+      </div>
+      <div class="mt-2">
+        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
+          Atención a partir de 15 años.
+        </p>
+      </div>
+    </Card>
+  </div>
+
+  <div x-show="activeCategory === 'all' || activeCategory === 'psicologia'">
+    <Card class="'p-4 text-center lg:text-left'">
+      <div
+      class="relative w-full h-40"
+    >
+      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[190px] lg:max-w-[240px] ptablet:max-w-[220px] shadow-xl">
           <img
           class="w-full h-full object-contain"
           src="/img/team/rocio-fernandez.png"
@@ -20,9 +48,7 @@ import Card from "@components/base/Card.astro";
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
           Rocío E. Fernández
         </h4>
-     
         <p class="text-sm text-muted-400">Lic. en Psicología</p>
-    
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
@@ -33,11 +59,11 @@ import Card from "@components/base/Card.astro";
   </div>
 
   <div x-show="activeCategory === 'all' || activeCategory === 'masoterapia'">
-    <Card class="'p-4'">
+    <Card class="'p-4 text-center lg:text-left'">
       <div
         class="relative w-full h-40 "
       >
-        <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[240px] ptablet:max-w-[220px] shadow-xl">
+        <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[190px] lg:max-w-[240px] ptablet:max-w-[220px] shadow-xl">
             <img
             class="w-full h-full object-contain"
             src="/img/team/rosana-arce.jpg"
@@ -56,16 +82,43 @@ import Card from "@components/base/Card.astro";
           Masoterapeuta con 15 años de experiencia. Realiza masajes descontracturantes y drenaje linfático manual.
         </p>
       </div>
+    </Card>
+  </div>
+
+  <div x-show="activeCategory === 'all' || activeCategory === 'psicopedagogia'">
+    <Card class="'p-4 text-center lg:text-left'">
+      <div
+      class="relative w-full h-40 "
+    >
+      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[190px] lg:max-w-[240px] ptablet:max-w-[220px] shadow-xl">
+          <img
+          class="w-full h-full object-contain"
+          src="/img/team/lorena-solis.jpg"
+          alt="Lorena Solis"
+        />
+      </div>
+    </div>
+      <div class="font-sans mt-3">
+        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
+          Lorena Solis
+        </h4>
+        <p class="text-sm text-muted-400">Psicopedagoga</p>
+      </div>
+      <div class="mt-2">
+        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
+          Atención a niños de 6 a 15 años. Experiencia en dificultades de aprendizaje.
+        </p>
+      </div>
 
     </Card>
   </div>
 
   <div x-show="activeCategory === 'all' || activeCategory === 'psicopedagogia'">
-    <Card class="'p-4'">
+    <Card class="'p-4 text-center lg:text-left'">
       <div
       class="relative w-full h-40 "
     >
-      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[240px] ptablet:max-w-[220px] shadow-xl">
+      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[190px] lg:max-w-[240px] ptablet:max-w-[220px] shadow-xl">
           <img
           class="w-full h-full object-contain"
           src="/img/team/florencia-lucero.jpg"
@@ -84,16 +137,15 @@ import Card from "@components/base/Card.astro";
           Prevención, diagnóstico y tratamiento psicopedagógico. Evaluación psicopedagógica de 6 a 16 años. Tratamiento psicopedagógico a niños de 3 años en adelante. Estimulación cognitiva para adultos.
         </p>
       </div>
-
     </Card>
   </div>
   
   <div x-show="activeCategory === 'all' || activeCategory === 'psicologia'">
-    <Card class="'p-4'">
+    <Card class="'p-4 text-center lg:text-left'">
       <div
       class="relative w-full h-40 "
     >
-      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[240px] ptablet:max-w-[220px] shadow-xl">
+      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[190px] lg:max-w-[240px] ptablet:max-w-[220px] shadow-xl">
           <img
           class="w-full h-full object-contain"
           src="/img/team/susana-orlandi.jpg"
@@ -117,13 +169,13 @@ import Card from "@components/base/Card.astro";
   </div>
 
   <div x-show="activeCategory === 'all' || activeCategory === 'nutricion'">
-    <Card class="'p-4'">
+    <Card class="'p-4 text-center lg:text-left'">
       <div
       class="relative w-full h-40"
     >
-      <div class="rounded-full aspect-square overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[240px] ptablet:max-w-[220px] shadow-xl">
+      <div class="rounded-full aspect-square overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[190px] lg:max-w-[240px] ptablet:max-w-[220px] shadow-xl">
           <img
-          class="w-full h-full object-contain "
+          class="w-full h-full object-contain"
           src="/img/team/maria-barrios.jpg"
           alt="Maria Laura Barrios"
         /> 
@@ -140,16 +192,15 @@ import Card from "@components/base/Card.astro";
           Amplia experiencia en jóvenes y adultos.
         </p>
       </div>
-    
     </Card>
   </div>
 
   <div x-show="activeCategory === 'all' || activeCategory === 'psicologia'">
-    <Card class="'p-4'">
+    <Card class="'p-4 text-center lg:text-left'">
       <div
       class="relative w-full h-40 "
     >
-      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[240px] ptablet:max-w-[220px] shadow-xl">
+      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[190px] lg:max-w-[240px] ptablet:max-w-[220px] shadow-xl">
           <img
           class="w-full h-full object-contain"
           src="/img/team/maribel-krispien.jpg"
@@ -168,44 +219,15 @@ import Card from "@components/base/Card.astro";
           Orientación TCC. (Terapia Cognitivo Conductual) Atención niños adolescentes y adultos. Experiencia en Acompañamiento Terapéutico y clínica en Adolescentes y adultos.
         </p>
       </div>
-    
     </Card>
   </div>
 
-  <div x-show="activeCategory === 'all' || activeCategory === 'psiquiatria'">
-    <Card class="'p-4'">
+  <div x-show="activeCategory === 'all' || activeCategory === 'psicologia'">
+    <Card class="'p-4 text-center lg:text-left'">
       <div
-      class="relative w-full h-40 "
+      class="relative w-full h-40"
     >
-      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[240px] ptablet:max-w-[220px] shadow-xl">
-          <img
-          class="w-full h-full object-contain"
-          src="/img/team/alfredo-herman.jpg"
-          alt="Alfredo Herman"
-        />
-      </div>
-    </div>
-      <div class="font-sans mt-3">
-        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Alfredo R. Herman
-        </h4>
-        <p class="text-sm text-muted-400">Medico Psiquiatra</p>
-      </div>
-      <div class="mt-2">
-        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Atención a partir de 15 años..
-        </p>
-      </div>
-   
-    </Card>
-  </div>
- 
-  <div x-show="activeCategory === 'all' || activeCategory === 'cardiology'">
-    <Card class="'p-4'">
-      <div
-      class="relative w-full h-40 "
-    >
-      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[240px] ptablet:max-w-[220px] shadow-xl">
+      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[190px] lg:max-w-[240px] ptablet:max-w-[220px] shadow-xl">
           <img
           class="w-full h-full object-contain"
           src="/img/team/patricia-nicola.jpg"
@@ -224,16 +246,15 @@ import Card from "@components/base/Card.astro";
           Orientación Psicoanálisis. Atención adolescentes adultos y adultos mayores. Terapia de pareja. Experiencia en violencia de género.
         </p>
       </div>
-    
     </Card>
   </div>
 
-  <div x-show="activeCategory === 'all' || activeCategory === 'general'">
-    <Card class="'p-4'">
+  <div x-show="activeCategory === 'all' || activeCategory === 'psicologia'">
+    <Card class="'p-4 text-center lg:text-left'">
         <div
-        class="relative w-full h-40 "
+        class="relative w-full h-40"
       >
-        <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[240px] ptablet:max-w-[220px] shadow-xl">
+        <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[190px] lg:max-w-[240px] ptablet:max-w-[220px] shadow-xl">
             <img
             class="w-full h-full object-contain"
             src="/img/team/viviana-villodas.jpg"
@@ -254,72 +275,15 @@ import Card from "@components/base/Card.astro";
           Amplia experiencia en discapacidad y consumo problemático de sustancias.
         </p>
       </div>
-   
-    </Card>
-  </div>
-
-  <div x-show="activeCategory === 'all' || activeCategory === 'psicopadagogia' | activeCategory === 'talleres'">
-    <Card class="'p-4'">
-      <div
-      class="relative w-full h-40 "
-    >
-      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[240px] ptablet:max-w-[220px] shadow-xl">
-          <img
-          class="w-full h-full object-contain"
-          src="/img/team/rocio-armas.jpg"
-          alt="Rocio Armas"
-        />
-      </div>
-    </div>
-      <div class="font-sans mt-3">
-        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Rocio Armas
-        </h4>
-        <p class="text-sm text-muted-400">Secretaria</p>
-      </div>
-      <div class="mt-2">
-        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-         Nuestra secretaria y el corazón administrativo de nuestro consultorio. Siempre atenta, organizada y con una sonrisa para todos.
-        </p>
-      </div>
- 
-    </Card>
-  </div>
-
-  <div x-show="activeCategory === 'all' || activeCategory === 'psicopedagogia'">
-    <Card class="'p-4'">
-      <div
-      class="relative w-full h-40 "
-    >
-      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[240px] ptablet:max-w-[220px] shadow-xl">
-          <img
-          class="w-full h-full object-contain"
-          src="/img/team/lorena-solis.jpg"
-          alt="Lorena Solis"
-        />
-      </div>
-    </div>
-      <div class="font-sans mt-3">
-        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Lorena Solis
-        </h4>
-        <p class="text-sm text-muted-400">Psicopedagoga</p>
-      </div>
-      <div class="mt-2">
-        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Atención a niños de 6 a 15 años. Experiencia en dificultades de aprendizaje.
-        </p>
-      </div>
-
     </Card>
   </div>
 
   <div x-show="activeCategory === 'all' || activeCategory === 'psicologia'">
-    <Card class="'p-4'">
+    <Card class="'p-4 text-center lg:text-left'">
       <div
-      class="relative w-full h-40 "
+      class="relative w-full h-40"
     >
-      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[240px] ptablet:max-w-[220px] shadow-xl">
+      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[190px] lg:max-w-[240px] ptablet:max-w-[220px] shadow-xl">
           <img
           class="w-full h-full object-contain"
           src="/img/team/cecilia-dominguez.jpg"
@@ -346,11 +310,11 @@ import Card from "@components/base/Card.astro";
   </div>
 
   <div x-show="activeCategory === 'all' || activeCategory === 'psicologia'">
-    <Card class="'p-4'">
+    <Card class="'p-4 text-center lg:text-left'">
       <div
-      class="relative w-full h-40 "
+      class="relative w-full h-40"
     >
-      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[240px] ptablet:max-w-[220px] shadow-xl">
+      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[190px] lg:max-w-[240px] ptablet:max-w-[220px] shadow-xl">
           <img
           class="w-full h-full object-contain"
           src="/img/team/jesica-saldivar.jpg"
@@ -369,16 +333,15 @@ import Card from "@components/base/Card.astro";
           Psicoanálisis. Atención a partir de 16 años hasta adultos mayores. Terapia de Pareja. Capacitación en Psicotécnicos. Experiencia en violencia de género.
         </p>
       </div>
-   
     </Card>
   </div>
 
   <div x-show="activeCategory === 'all' || activeCategory === 'psicologia'">
-    <Card class="'p-4'">
+    <Card class="'p-4 text-center lg:text-left'">
       <div
       class="relative w-full h-40 "
     >
-      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[240px] ptablet:max-w-[220px] shadow-xl">
+      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[190px] lg:max-w-[240px] ptablet:max-w-[220px] shadow-xl">
           <img
           class="w-full h-full object-contain"
           src="/img/team/camila-quiroga.jpg"
@@ -397,7 +360,33 @@ import Card from "@components/base/Card.astro";
           Orientación y formación en TCC(Terapia Cognitiva Conductual)Experiencia en rehabilitación en niños. Atención niños , adolescentes y adultos jóvenes.
         </p>
       </div>
-   
+    </Card>
+  </div>
+
+  <div x-show="activeCategory === 'all'">
+    <Card class="'p-4 text-center lg:text-left'">
+      <div
+      class="relative w-full h-40 "
+    >
+      <div class="rounded-full overflow-hidden absolute bottom-0 inset-x-0 mx-auto w-full max-w-[190px] lg:max-w-[240px] ptablet:max-w-[220px] shadow-xl">
+          <img
+          class="w-full h-full object-contain"
+          src="/img/team/rocio-armas.jpg"
+          alt="Rocio Armas"
+        />
+      </div>
+    </div>
+      <div class="font-sans mt-3">
+        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
+          Rocio Armas
+        </h4>
+        <p class="text-sm text-muted-400">Secretaria</p>
+      </div>
+      <div class="mt-2">
+        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
+         Nuestra secretaria y el corazón administrativo de nuestro consultorio. Siempre atenta, organizada y con una sonrisa para todos.
+        </p>
+      </div>
     </Card>
   </div>
 </div>

@@ -16,6 +16,20 @@
   </button>
 
   <button
+  class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300"
+  :class="activeCategory === 'psiquiatria' ? 'bg-muted-50 dark:bg-muted-700' : ''"
+  @click="activeCategory = 'psiquiatria'"
+>
+  <span
+    class="flex items-center justify-center h-10 w-10"
+    :class="activeCategory === 'psiquiatria' ? 'text-rose-500' : 'text-muted-400 group-hover:text-primary-500'"
+  >
+    <iconify-icon class="iconify w-6 h-6 flex items-center justify-center text-2xl" icon="ph:brain-duotone"></iconify-icon>
+  </span>
+  <span>Psiquiatría</span>
+  </button>
+
+  <button
     class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300"
     :class="activeCategory === 'psicologia' ? 'bg-muted-50 dark:bg-muted-700' : ''"
     @click="activeCategory = 'psicologia'"
@@ -28,19 +42,7 @@
     </span>
     <span>Psicología</span>
   </button>
-  <button
-    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300"
-    :class="activeCategory === 'psiquiatria' ? 'bg-muted-50 dark:bg-muted-700' : ''"
-    @click="activeCategory = 'psiquiatria'"
-  >
-    <span
-      class="flex items-center justify-center h-10 w-10"
-      :class="activeCategory === 'psiquiatria' ? 'text-rose-500' : 'text-muted-400 group-hover:text-primary-500'"
-    >
-      <iconify-icon class="iconify w-6 h-6 flex items-center justify-center text-2xl" icon="ph:brain-duotone"></iconify-icon>
-    </span>
-    <span>Psiquiatría</span>
-  </button>
+
   <button
     class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300"
     :class="activeCategory === 'psicopedagogia' ? 'bg-muted-50 dark:bg-muted-700' : ''"
@@ -82,7 +84,7 @@
     <span>Masoterapia</span>
   </button>
 
-  <button
+  <!-- <button
   class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300"
   :class="activeCategory === 'talleres' ? 'bg-muted-50 dark:bg-muted-700' : ''"
   @click="activeCategory = 'talleres'"
@@ -94,5 +96,5 @@
     <iconify-icon class="iconify w-6 h-6 flex items-center justify-center text-2xl" icon="ph:person-duotone"></iconify-icon>
   </span>
   <span>RPG</span>
-</button>
+</button> -->
 </div>

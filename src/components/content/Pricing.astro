@@ -1,17 +1,24 @@
+---
+
+import ButtonMain from "@components/base/ButtonMain.astro";
+
+---
+
 <div id="pricing" class="w-full max-w-6xl mx-auto"  x-intersect="activeStep = 'spy-3'">
+
   <div class="p-6 md:p-10 rounded-2xl bg-muted-200 dark:bg-muted-900">
     <div class="grid md:grid-cols-2 ltablet:grid-cols-3 lg:grid-cols-3 gap-6">
       <div class="ptablet:hidden">
         <div class="h-full flex items-center justify-center">
           <div class="font-sans md:px-4">
-            <h3 class="text-2xl mb-3 text-muted-800 dark:text-muted-100">Nuestros talleres</h3>
+            <h3 class="text-2xl mb-3 text-muted-800 dark:text-muted-100">Talleres en Salud y Bienestar</h3>
             <p class="mb-3 text-sm text-muted-500 dark:text-muted-400">
-              Te ofrecemos un espacio de aprendizaje y crecimiento personal diseñado para cuidar de tu bienestar emocional y psicológico. Cada taller está guiado por profesionales de la psicología que te brindarán herramientas prácticas para afrontar los desafíos de la vida cotidiana.
+              En nuestros consultorios ofrecemos una variedad de talleres diseñados para diferentes edades y necesidades. A medida que consultás y mostramos interés, organizamos los grupos para dar inicio a nuevas propuestas.
             </p>
           </div>
         </div>
       </div>
-      <!-- Pricing option -->
+
       <div>
         <div
           class="w-full rounded-xl px-6 md:px-8 pt-6 md:pt-8 pb-4 border border-muted-200 dark:border-muted-700 bg-white dark:bg-muted-800 transition-colors duration-300"
@@ -23,52 +30,75 @@
               <div
                 class="flex items-center justify-center h-10 w-10 bg-rose-100 dark:bg-rose-100/10 rounded-full"
               >
-                <iconify-icon class="iconify w-5 h-5 flex items-center justify-center text-2xl text-rose-500" icon="ph:first-aid-duotone"></iconify-icon>
+                <iconify-icon class="iconify w-5 h-5 flex items-center justify-center text-2xl text-rose-500" icon="ph:person-duotone"></iconify-icon>
               </div>
             </div>
             <h3
               class="font-heading text-2xl font-medium text-muted-800 dark:text-white"
             >
-              Taller 1
+            Educación Sexual Integral (ESI)
             </h3>
           </div>
 
           <p
             class="font-sans text-sm py-2 mt-1 text-muted-500 dark:text-muted-400"
           >
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eaque nam, doloremque sit totam iure quia quisquam corrupti, explicabo quae sapiente, maxime animi recusandae. Incidunt nobis id illo quas iste!
+          <strong>Para niños: </strong>
+          Talleres educativos donde trabajamos emociones, relaciones saludables, el respeto por uno mismo y los demás, y el cuidado del cuerpo.
           </p>
-          <div class="flex items-center mt-2 mb-4">
-            <h4
-              class="font-heading text-4xl font-semibold text-muted-800 dark:text-white mr-4"
-            >
-              $0
-            </h4>
-          
-          </div>
-          <ul class="pb-4 space-y-1 text-muted-400">
-            <li class="flex items-center">
-              <iconify-icon class="iconify block mr-1" icon="lucide:check"></iconify-icon>
-              <span class="font-sans text-sm">Lorem ipsum dolor sit amet </span>
-            </li>
-            <li class="flex items-center">
-              <iconify-icon class="iconify block mr-1" icon="lucide:check"></iconify-icon>
-              <span class="font-sans text-sm">Dolor sit amet</span>
-            </li>
-            <li class="flex items-center">
-              <iconify-icon class="iconify block mr-1" icon="lucide:check"></iconify-icon>
-              <span class="font-sans text-sm">Lorem ipsum</span>
-            </li>
-          </ul>
+          <p
+            class="font-sans text-sm py-2 mt-1 text-muted-500 dark:text-muted-400"
+          >
+          <strong>Para adolescentes: </strong>
+         Espacios de promoción y prevención orientados a fortalecer la educación sexual integral, abordando temas como autocuidado, relaciones sanas, manejo de emociones y toma de decisiones responsables.
+          </p>
+       
           <a
             href="https://wa.me/5491141762191"
+             target="_blank"
             class="block w-full text-sm text-center font-sans my-2 py-4 font-medium text-primary-600 hover:text-muted-100 hover:bg-primary-500 hover:shadow-lg hover:shadow-primary-500/30 rounded-lg border border-primary-600/25 transition-all duration-300"
           >
-            Pedir turno
+            Consultar
           </a>
         </div>
       </div>
-      <!-- Pricing option -->
+
+      <div>
+        <div
+          class="w-full rounded-xl px-6 md:px-8 pt-6 md:pt-8 pb-4 border border-muted-200 dark:border-muted-700 bg-white dark:bg-muted-800 transition-colors duration-300"
+        >
+          <div class="flex items-center -mt-2">
+            <div
+              class="flex items-center justify-center h-12 w-12 border border-muted-200 dark:border-muted-700 rounded-full bg-white dark:bg-muted-800 mr-2"
+            >
+              <div
+                class="flex items-center justify-center h-10 w-10 bg-rose-100 dark:bg-rose-100/10 rounded-full"
+              >
+                <iconify-icon class="iconify w-5 h-5 flex items-center justify-center text-2xl text-rose-500" icon="ph:baby-duotone"></iconify-icon>
+              </div>
+            </div>
+            <h3
+              class="font-heading text-2xl font-medium text-muted-800 dark:text-white"
+            >
+            Talleres de verano para niños
+            </h3>
+          </div>
+
+          <p
+            class="font-sans text-sm py-2 mt-1 text-muted-500 dark:text-muted-400"
+          >
+          Talleres relacionados con arte, emociones, cuentos, y actividades recreativas según las edades.
+          </p>
+          <a
+            href="https://wa.me/5491141762191"
+             target="_blank"
+            class="block w-full text-sm text-center font-sans my-2 py-4 font-medium text-primary-600 hover:text-muted-100 hover:bg-primary-500 hover:shadow-lg hover:shadow-primary-500/30 rounded-lg border border-primary-600/25 transition-all duration-300"
+          >
+           Constultar
+          </a>
+        </div>
+      </div>
+
       <div>
         <div
           class="w-full rounded-xl px-6 md:px-8 pt-6 md:pt-8 pb-4 border border-muted-200 dark:border-muted-700 bg-white dark:bg-muted-800 transition-colors duration-300"
@@ -86,45 +116,75 @@
             <h3
               class="font-heading text-2xl font-medium text-muted-800 dark:text-white"
             >
-              Taller 2
+            Talleres sobre adicciones
             </h3>
           </div>
-
           <p
             class="font-sans text-sm py-2 mt-1 text-muted-500 dark:text-muted-400"
           >
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eaque nam, doloremque sit totam iure quia quisquam corrupti, explicabo quae sapiente, maxime animi recusandae. Incidunt nobis id illo quas iste!
+          Prevención y orientación para personas que enfrentan adicciones. <br>
+          Acompañamiento y apoyo para familiares.
           </p>
-          <div class="flex items-center mt-2 mb-4">
-            <h4
-              class="font-heading text-4xl font-semibold text-muted-800 dark:text-white mr-4"
-            >
-              $0
-            </h4>
-          
-          </div>
-          <ul class="pb-4 space-y-1 text-muted-400">
-            <li class="flex items-center">
-              <iconify-icon class="iconify block mr-1" icon="lucide:check"></iconify-icon>
-              <span class="font-sans text-sm">Lorem ipsum dolor sit amet </span>
-            </li>
-            <li class="flex items-center">
-              <iconify-icon class="iconify block mr-1" icon="lucide:check"></iconify-icon>
-              <span class="font-sans text-sm">Dolor sit amet</span>
-            </li>
-            <li class="flex items-center">
-              <iconify-icon class="iconify block mr-1" icon="lucide:check"></iconify-icon>
-              <span class="font-sans text-sm">Lorem ipsum</span>
-            </li>
-          </ul>
           <a
             href="https://wa.me/5491141762191"
+            target="_blank"
             class="block w-full text-sm text-center font-sans my-2 py-4 font-medium text-primary-600 hover:text-muted-100 hover:bg-primary-500 hover:shadow-lg hover:shadow-primary-500/30 rounded-lg border border-primary-600/25 transition-all duration-300"
           >
-            Pedir turno
+            Consultar
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div
+          class="w-full rounded-xl px-6 md:px-8 pt-6 md:pt-8 pb-4 border border-muted-200 dark:border-muted-700 bg-white dark:bg-muted-800 transition-colors duration-300"
+        >
+          <div class="flex items-center -mt-2">
+            <div
+              class="flex items-center justify-center h-12 w-12 border border-muted-200 dark:border-muted-700 rounded-full bg-white dark:bg-muted-800 mr-2"
+            >
+              <div
+                class="flex items-center justify-center h-10 w-10 bg-rose-100 dark:bg-rose-100/10 rounded-full"
+              >
+                <iconify-icon class="iconify w-5 h-5 flex items-center justify-center text-2xl text-rose-500" icon="ph:compass-rose-duotone"></iconify-icon>
+              </div>
+            </div>
+            <h3
+              class="font-heading text-2xl font-medium text-muted-800 dark:text-white"
+            >
+            Talleres de orientación para padres
+            </h3>
+          </div>
+          <p
+            class="font-sans text-sm py-2 mt-1 text-muted-500 dark:text-muted-400"
+          >
+          Espacios de diálogo y estrategias para el acompañamiento emocional y educativo de sus hijos.
+          </p>
+          <a
+            href="https://wa.me/5491141762191"
+            target="_blank"
+            class="block w-full text-sm text-center font-sans my-2 py-4 font-medium text-primary-600 hover:text-muted-100 hover:bg-primary-500 hover:shadow-lg hover:shadow-primary-500/30 rounded-lg border border-primary-600/25 transition-all duration-300"
+          >
+            Consultar
           </a>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="mt-8 text-center flex flex-col items-center text-muted-500 ">
+    <span>
+      ¿Tenés alguna consulta o interés específico? 
+    </span>
+    <span>
+     Si no encontrás el taller que buscás, consultanos y trabajaremos para ofrecerlo. 
+    </span>
+  
+    <ButtonMain
+    title="Contacto"
+    class="'cursor-pointer mt-4'"
+    to="https://wa.me/5491141762191"
+  >
+  Contactanos</ButtonMain>
   </div>
 </div>
