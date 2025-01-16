@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const updateCarousel = () => {
     track.style.transform = `translateX(-${currentIndex * 100}%)`;
     indicators.forEach((indicator, index) => {
-      indicator.classList.toggle("bg-white", index === currentIndex);
-      indicator.classList.toggle("bg-white/30", index !== currentIndex);
+      indicator.classList.toggle("opacity-50", index === currentIndex);
+      indicator.classList.toggle("opacity-50", index !== currentIndex);
     });
   };
 
