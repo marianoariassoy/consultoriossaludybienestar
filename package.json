@@ -7,8 +7,8 @@
     "name": "cssninjaStudio <hello@cssninja.io> (https://cssninja.io)"
   },
   "engines": {
-    "node": ">=18",
-    "pnpm": ">=8"
+    "node": "22",
+    "pnpm": "^7.5.1"
   },
   "scripts": {
     "dev": "astro dev",
@@ -39,5 +39,6 @@
   "devDependencies": {
     "@fontsource-variable/inter": "^5.0.18",
     "autoprefixer": "10.4.19"
-  }
+  },
+  "packageManager": "pnpm@7.5.1"
 }
