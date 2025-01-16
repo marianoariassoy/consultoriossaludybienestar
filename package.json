@@ -6,10 +6,6 @@
   "author": {
     "name": "marianoarias.soy"
   },
-  "engines": {
-    "node": "22.x",
-    "pnpm": ">=8.0.0"
-  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -38,6 +34,5 @@
   "devDependencies": {
     "@fontsource-variable/inter": "^5.0.18",
     "autoprefixer": "10.4.19"
-  },
-  "packageManager": "pnpm@7.5.1"
+  }
 }
