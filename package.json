@@ -1,13 +1,13 @@
 {
-  "name": "dokto",
+  "name": "consultorios",
   "type": "module",
-  "version": "1.4.0",
+  "version": "1.0.0",
   "private": true,
   "author": {
-    "name": "cssninjaStudio <hello@cssninja.io> (https://cssninja.io)"
+    "name": "marianoarias.soy"
   },
   "engines": {
-    "node": "22",
+    "node": "22.x",
     "pnpm": "^7.5.1"
   },
   "scripts": {
