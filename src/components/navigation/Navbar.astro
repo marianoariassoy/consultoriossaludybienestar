@@ -16,16 +16,15 @@ import Hamburger from "@components/base/Hamburger.astro";
   >
     <!-- Left -->
     <div class="w-full lg:w-auto flex items-center gap-4">
-      <a href="/" class="flex items-center gap-1">
+      <a href="/" class="flex items-center">
         <div
-          class="transition-all duration-300"
-          :class="scrolled || $store.app.mobileOpen ? 'text-rose-500' : 'text-primary-600'"
+          class="transition-all duration-300 -ml-4"       
         >
           <img src="/img/logo/logo.svg" alt="Logo" width="70">
          
         </div>
         <span
-          class="font-sans lg:text-lg tracking-widest text-muted-800 dark:text-muted-100 text-wrap leading-5"
+          class="font-sans tracking-widest text-muted-800 dark:text-muted-100 text-wrap leading-5"
           >Consultorios Salud y Bienestar</span
         >
       </a>

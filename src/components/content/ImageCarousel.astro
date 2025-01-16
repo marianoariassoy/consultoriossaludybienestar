@@ -1,0 +1,42 @@
+---
+  const images = [
+    "/img/espacio/1.jpg",
+    "/img/espacio/4.jpg",
+    "/img/espacio/6.jpg",
+    "/img/espacio/7.jpg",
+    "/img/espacio/8.jpg",
+    "/img/espacio/10.jpg",
+    "/img/espacio/11.jpg",
+    "/img/espacio/12.jpg",
+    "/img/espacio/13.jpg",
+  ];
+---
+
+<div class="carousel relative w-full max-w-4xl mx-auto overflow-hidden mb-16 aspect-[4/5] lg:aspect-[5/3]" >
+  <div class="carousel-track flex transition-transform duration-500 h-full" style="transform: translateX(0);">
+    {images.map((image, index) => (
+      <div class="carousel-item w-full shrink-0">
+        <img src={image} alt={`Image ${index + 1}`} class="w-full h-full object-cover object-center" />
+      </div>
+    ))}
+  </div>
+
+  <button 
+    class="prev-btn absolute top-1/2 left-4 transform -translate-y-1/2 border border-white text-white p-2 rounded-full w-12 h-12 hover:opacity-60 flex items-center justify-center">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="w-6 h-6"> <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+  </button>
+  <button 
+    class="next-btn absolute top-1/2 right-4 transform -translate-y-1/2 border border-white text-white p-2 rounded-full w-12 h-12 hover:opacity-60 flex items-center justify-center">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="w-6 h-6"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+  </button>
+
+  <div class="indicators absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2">
+    {images.map((_, index) => (
+      <button 
+        data-index={index}
+        class="indicator w-2 h-2 rounded-full"></button>
+    ))}
+  </div>
+</div>
+
+<script src="/js/carousel.js" defer></script>
